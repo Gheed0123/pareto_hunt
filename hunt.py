@@ -428,7 +428,7 @@ def score_part(solution, m_part: str, finite: bool):
 
 
 def score_whole(solution, metric):
-    finite = metric["manifold"]["id"] == "VICTORY"
+    finite = "VICTORY" in metric["manifold"]["id"]
     ss = []
 
     for m in metric['fullmetrics']:
